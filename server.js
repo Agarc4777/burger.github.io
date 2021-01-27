@@ -1,6 +1,7 @@
 // dependancies
 var express = require("express");
 var exphbs = require("express-handlebars");
+var routes = require("./controllers/burgers_controller.js");
 
 // ==========================================
 // sets up express app
@@ -15,13 +16,7 @@ app.use(express.json());
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-
-
-
-
-
-
-
+app.use(routes);
 
 
 app.listen(PORT, function() {
