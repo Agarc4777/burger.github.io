@@ -1,0 +1,9 @@
+<li class="d-flex justify-content-between">
+	{{burger_name}}
+    <div>
+        <button class="change-devoured" data-id="{{id}}" data-devoured={{devoured}}>
+            {{#if devoured}}EATEN {{else}}EAT{{/if}}
+        </button>
+        {{!-- <button class="delete-burger" data-id="{{this.id}}">DEVOUR!</button> --}}
+    </div>
+</li>

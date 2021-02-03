@@ -1,4 +1,4 @@
-USE burgers_db;
+USE n94bffmmhcnkshqh;
 
 INSERT INTO burgers (burger_name) VALUES ('Grilled Chicken');
 

@@ -1,0 +1,27 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Burgers</h1>
+  </div>
+</div>
+
+<div class="container d-flex">
+    <ul>
+        {{#each burgers}}
+            {{#unless devoured}}
+                {{> burgers/burgers-block devoured=false}}
+            {{/unless}}
+        {{/each}}
+    </ul>
+    <ul>
+        {{#each burgers}}
+            {{#if devoured}}
+                {{> burgers/burgers-block devoured=true}}
+            {{/if}}
+        {{/each}}
+    </ul>
+</div>
+<div class="container">
+    <label for="burger-input">Burger name: </label><br>
+    <input type="text" id="burger-input"></input>
+    <button type="button" id="add-burger">Add Burger</button>
+</div>
