@@ -1,13 +1,13 @@
 .jumbotron {
     text-align: center;
-};
+}
 
 ul#uneaten {
     border: 1px solid;
     background-color: lightgreen;
-};
+}
 
 ul#eaten {
     border: 1px solid;
     background-color: lightcoral;
-};
+}
